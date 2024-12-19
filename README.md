@@ -72,49 +72,7 @@ PS C:\Users\Administrator> conda info
              netrc file : None
            offline mode : False       
 ```
-```md
-根据您提供的 `conda info` 输出信息，可以分析如下各项内容的含义：
 
-1. **active environment (活动环境)**: `None` 表示当前没有激活任何 Conda 环境。
-
-2. **user config file (用户配置文件)**: `C:\Users\Administrator\.condarc` 是 Conda 用户的配置文件路径。
-
-3. **populated config files (已填充的配置文件)**: 列出了系统中已填充的配置文件，包括用户配置文件和 base Conda 安装目录中的配置文件。
-
-4. **conda version (Conda 版本)**: `24.9.2` 表示当前安装的 Conda 版本。
-
-5. **conda-build version (Conda Build 版本)**: `24.9.0` 是 Conda Build 的版本，通常用于打包和构建软件包。
-
-6. **python version (Python 版本)**: `3.12.7.final.0` 表示当前使用的 Python 版本。
-
-7. **solver (求解器)**: `libmamba (default)` 表示当前使用的依赖关系解决器是 libmamba，这是一个快速的求解器。
-
-8. **virtual packages (虚拟环境包)**: 这部分显示了 Conda 环境中存在的一些虚拟包，包括架构规格、Conda 版本、CUDA 版本和操作系统版本等信息。
-
-9. **base environment (基础环境)**: `D:\anaconda` 是 Conda 的基础环境目录，您可以在这里安装和管理软件包。
-
-10. **conda av data dir (Conda 可用数据目录)**: `D:\anaconda\etc\conda` 指向 Conda 的可用数据文件夹。
-
-11. **conda av metadata url (Conda 可用元数据 URL)**: `None` 表示当前没有设置可用的元数据 URL。
-
-12. **channel URLs (频道 URL)**: 列出了一系列可用的软件包频道，供 Conda 下载和安装软件包。这里的频道使用了 Tsinghua 反向代理和 Anaconda 官方镜像。
-
-13. **package cache (包缓存)**: 列出 Conda 软件包的缓存位置，Conda 会在这些目录中存储下载的软件包，以避免重复下载。
-
-14. **envs directories (环境目录)**: 列出了 Conda 环境的存储位置，您可以在这些地方寻找或管理创建的环境。
-
-15. **platform (平台)**: `win-64` 表示当前的操作系统平台为 Windows 64位。
-
-16. **user-agent (用户代理)**: 描述了当前的 Conda 客户端版本及所用的其他库和环境信息。
-
-17. **administrator (管理员)**: `True` 表示当前用户具有管理员权限，这可能影响一些软件包的安装和管理行为。
-
-18. **netrc file (netrc 文件)**: `None` 表示没有找到 netrc 配置文件，netrc 文件用于存储登录凭据，但在这里未设置任何。
-
-19. **offline mode (离线模式)**: `False` 表示 Conda 并未处于离线模式，可以连接到网络进行软件包的下载和更新。
-
-通过以上信息，您可以更好地理解当前 Conda 环境的配置和状态。
-```
 Extesion:命令行之间的区别
 
 powershell和cmd和Anaconda Prompt的区别
