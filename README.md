@@ -1,7 +1,8 @@
 # 一、YOLO 
 YOLO入门教程：如何训练自己的数据集
 
-## 安装anaconda:python包和环境管理工具，类似操作系统界的VMware
+## 1.安装anaconda
+python包和环境管理工具，类似操作系统界的VMware
 
 和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 
 
