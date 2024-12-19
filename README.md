@@ -19,6 +19,8 @@ D:\anaconda3\Library\mingw-w64\bin
 ```python
 #验证是否安装成功
 conda --version
+#更详细的信息查询
+conda info
 ```
 
 Extesion:命令行之间的区别
