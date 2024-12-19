@@ -86,27 +86,30 @@ pip3和pip的区别
 conda相关命令
 
 ## 2.使用anaconda
+**创建名称为:yolov5_env的环境,指定pyhton版本为3.x**
 ```python
-#创建名称为:yolov5_env的环境,指定pyhton版本为3.x
 conda create -n yolov5_env python=3.x
 ```
-```
-#激活/进入 创建好的环境
+**创建名称为:yolov5_env的环境,指定pyhton版本为3.x**
+```pyhton
 activate yolov5_env
 ```
+**安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，例如安装cuda12.4**
+```python
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
-# 安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，例如安装cuda12.4
-```
-```
-# 下载YOLOv5源码
+**下载YOLOv5源码**
+```python
 git clone https://github.com/ultralytics/yolov5.git
 ```
-```
-# 进入YOLOv5源码，下载所需其他pyhton包
+**进入YOLOv5源码，下载所需其他pyhton包**
+```pyhton
+cd yolov5
 pip install -r requirements
 ```
-```
-# 其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install
+**其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install**
+```pyhton
+
 ```
 # 二、Extend:深度学习环境配置
 GPU cuda pytorch torch anaconda 
