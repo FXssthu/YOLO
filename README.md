@@ -22,6 +22,56 @@ conda --version
 #更详细的信息查询
 conda info
 ```
+为了深入了解anaconda的组成，便于分析后续可能遇到的问题，我们决定分析一下conda info的内容
+
+```
+PS C:\Users\Administrator> conda info
+
+     active environment : None
+       user config file : C:\Users\Administrator\.condarc
+ populated config files : D:\anaconda\.condarc
+                          C:\Users\Administrator\.condarc
+          conda version : 24.9.2
+    conda-build version : 24.9.0
+         python version : 3.12.7.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=skylake
+                          __conda=24.9.2=0
+                          __cuda=12.7=0
+                          __win=0=0
+       base environment : D:\anaconda  (writable)
+      conda av data dir : D:\anaconda\etc\conda
+  conda av metadata url : None
+           channel URLs : https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/win-64
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/noarch
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/win-64
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/win-64
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/noarch
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro/win-64
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro/noarch
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/win-64
+                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/main/win-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/win-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/msys2/win-64
+                          https://repo.anaconda.com/pkgs/msys2/noarch
+          package cache : D:\anaconda\pkgs
+                          C:\Users\Administrator\.conda\pkgs
+                          C:\Users\Administrator\AppData\Local\conda\conda\pkgs
+       envs directories : D:\anaconda\envs
+                          C:\Users\Administrator\.conda\envs
+                          C:\Users\Administrator\AppData\Local\conda\conda\envs
+               platform : win-64
+             user-agent : conda/24.9.2 requests/2.32.3 CPython/3.12.7 Windows/11 Windows/10.0.22631 solver/libmamba conda-libmamba-solver/24.9.0 libmambapy/1.5.8 aau/0.4.4 c/. s/. e/.
+          administrator : True
+             netrc file : None
+           offline mode : False       
+```
 
 Extesion:命令行之间的区别
 
