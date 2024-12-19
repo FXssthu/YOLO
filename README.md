@@ -24,6 +24,8 @@ conda info
 ```
 为了深入了解anaconda的组成，便于分析后续可能遇到的问题，我们决定分析一下conda info的内容
 
+复制下面内容到语言大模型，package cache可能以后分析问题会遇到
+
 ```
 PS C:\Users\Administrator> conda info
 
@@ -75,7 +77,7 @@ PS C:\Users\Administrator> conda info
 
 Extesion:命令行之间的区别
 
-powershell和cmd和Anaconda Prompt的区别
+powershell和cmd和Anaconda Prompt和Anaconda PowerShell Prompt和Linux->Terminal区别
 
 pip缓存cache的问题，相关关键词:更新和依赖
 
