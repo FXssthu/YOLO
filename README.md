@@ -1,7 +1,7 @@
 # 一、YOLO 
 YOLO入门教程：如何训练自己的数据集
 
-安装anaconda:python包和环境管理工具，类似操作系统界的VMware
+## 安装anaconda:python包和环境管理工具，类似操作系统界的VMware
 
 和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 
 
@@ -9,9 +9,20 @@ YOLO入门教程：如何训练自己的数据集
 
 记得配置anaconda的环境变量，什么是环境变量=为什么要配置环境变量=环境变量有什么作用
 
-缓存cache的问题，相关关键词:更新和依赖
+```
+D:\anaconda3
+D:\anaconda3\Scripts
+D:\anaconda3\Library\bin
+D:\anaconda3\Library\mingw-w64\bin
+```
+
+pip缓存cache的问题，相关关键词:更新和依赖
+
+pip3和pip的区别
 
 conda相关命令
+
+
 ```python
 #创建名称为:yolov5_env的环境,指定pyhton版本为3.x
 conda create -n yolov5_env python=3.x
