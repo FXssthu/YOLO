@@ -3,8 +3,10 @@ YOLO入门教程：如何训练自己的数据集
 
 conda相关命令
 ```python
-conda create -n yolov5_env python=3.x  #创建名称为:yolov5_env的环境,指定pyhton版本为3.x
-activate yolov5_env #激活/进入 创建好的环境
+#创建名称为:yolov5_env的环境,指定pyhton版本为3.x
+conda create -n yolov5_env python=3.x
+#激活/进入 创建好的环境
+activate yolov5_env 
 # 安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，例如安装cuda12.4
 
 # 下载YOLOv5源码
