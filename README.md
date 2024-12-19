@@ -16,6 +16,14 @@ D:\anaconda3\Scripts
 D:\anaconda3\Library\bin
 D:\anaconda3\Library\mingw-w64\bin
 ```
+```python
+#验证是否安装成功
+conda --version
+```
+
+Extesion:命令行之间的区别
+
+powershell和cmd和Anaconda Prompt的区别
 
 pip缓存cache的问题，相关关键词:更新和依赖
 
