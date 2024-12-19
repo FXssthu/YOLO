@@ -41,5 +41,8 @@ git config --global --unset https.proxy
 ```
 git config --global http.sslVerify "true"
 git config --global https.sslVerify "true"
-
+```
+```
+git config --global http.sslVerify "false
+git config --global https.sslVerify "false"
 ```
