@@ -1,6 +1,7 @@
 # YOLO 
 YOLO入门教程：如何训练自己的数据集
-安装anaconda
+
+安装anaconda[https://www.anaconda.com/download]
 
 conda相关命令
 ```python
