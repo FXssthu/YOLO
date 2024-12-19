@@ -124,7 +124,7 @@ pip install -r requirements
 
 **yolov5训练命令** 
 ```python
-
+python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weights yolov5s.pt --device 0
 ```
 
 **其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install**
