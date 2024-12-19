@@ -1,8 +1,15 @@
-# YOLO 
+# 一、YOLO 
 YOLO入门教程：如何训练自己的数据集
 
-安装anaconda
-[anaconda下载官网](https://www.anaconda.com/download)
+安装anaconda:python包和环境管理工具，类似操作系统界的VMware
+
+和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 
+
+[Anaconda下载官网](https://www.anaconda.com/download)
+
+记得配置anaconda的环境变量，什么是环境变量=为什么要配置环境变量=环境变量有什么作用
+
+缓存cache的问题，相关关键词:更新和依赖
 
 conda相关命令
 ```python
@@ -22,7 +29,7 @@ pip install -r requirements
 
 # 其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install
 ```
-# Extend:深度学习环境配置！
+# 二、Extend:深度学习环境配置
 GPU cuda pytorch torch anaconda 
 
 conda TensorFlow tense pip sudo 
@@ -31,7 +38,7 @@ GPU驱动
 
 相互关系:例：只有NVIDIA的GPU才支持pytorch
 
-# 其他问题解决
+# 三、其他问题解决
 
 ### 浏览器可访问但是git clone 屡战屡败？
 
