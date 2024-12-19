@@ -85,7 +85,7 @@ pip3和pip的区别
 
 conda相关命令
 
-
+## 使用anaconda
 ```python
 #创建名称为:yolov5_env的环境,指定pyhton版本为3.x
 conda create -n yolov5_env python=3.x
