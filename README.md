@@ -107,6 +107,26 @@ git clone https://github.com/ultralytics/yolov5.git
 cd yolov5
 pip install -r requirements
 ```
+至此:yolov5环境搭建完成，下面是数据集构建和数据标注
+
+构建以下目录:
+```
+└─data
+    ├─images
+    │  ├─train
+    │  └─val
+    └─labels
+        ├─train
+        └─val
+└─yolov5
+```
+其中data文件夹下应有:data.yaml文件，用于告诉YOLO数据在什么地方，数据组成是什么样子的
+
+**yolov5训练命令** 
+```python
+
+```
+
 **其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install**
 ```pyhton
 
@@ -118,7 +138,7 @@ GPU cuda pytorch torch anaconda
 
 conda TensorFlow tenser pip sudo 
 
-GPU驱动 cuda编程 cuda Toolkit cuda核心
+GPU驱动 cuda编程 cuda Toolkit cuda核心 nvcc
 
 相互关系:例：只有NVIDIA的GPU才支持pytorch
 
@@ -154,3 +174,5 @@ git config --global https.sslVerify "true"
 git config --global http.sslVerify "false
 git config --global https.sslVerify "false"
 ```
+
+### 3.清华源、阿里源...下载设置
