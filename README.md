@@ -86,11 +86,11 @@ pip3和pip的区别
 conda相关命令
 
 ## 2.使用anaconda
-**创建名称为:yolov5_env的环境,指定pyhton版本为3.x**
+**创建名称为:yolov5_env的环境,指定pyhton版本为3.x,不写参数默认为conda info中的版本**
 ```python
 conda create -n yolov5_env python=3.x
 ```
-**创建名称为:yolov5_env的环境,指定pyhton版本为3.x**
+**激活/进入创建的环境**
 ```pyhton
 activate yolov5_env
 ```
@@ -112,13 +112,16 @@ pip install -r requirements
 
 ```
 # 二、Extend:深度学习环境配置
+相关名词和关系解释
+
 GPU cuda pytorch torch anaconda 
 
-conda TensorFlow tense pip sudo 
+conda TensorFlow tenser pip sudo 
 
-GPU驱动 
+GPU驱动 cuda编程 cuda Toolkit cuda核心
 
 相互关系:例：只有NVIDIA的GPU才支持pytorch
+
 
 # 三、其他问题解决
 
