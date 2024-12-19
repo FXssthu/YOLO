@@ -27,7 +27,7 @@ conda info
 ```
 PS C:\Users\Administrator> conda info
 
-     active environment : None
+     active environment : None     #现有激活的环境
        user config file : C:\Users\Administrator\.condarc
  populated config files : D:\anaconda\.condarc
                           C:\Users\Administrator\.condarc
