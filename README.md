@@ -17,7 +17,7 @@ git clone https://github.com/ultralytics/yolov5.git
 # 进入YOLOv5源码，下载所需其他pyhton包
 pip install -r requirements
 
-# 其他问题:pip缓存清除
+# 其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install
 ```
 # Extend:深度学习环境配置！
 GPU cuda pytorch torch anaconda 
