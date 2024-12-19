@@ -114,70 +114,20 @@ GPU驱动
 
 # 三、其他问题解决
 
-### conda缓存清除
+### 1.conda缓存清除
 清除 Anaconda 的缓存可以帮助释放磁盘空间，或解决某些软件包安装问题。以下是清除 Anaconda 缓存的几种方法：
 
-#### 1. 清除所有缓存
-
-使用以下命令在终端或命令提示符中清除所有 Conda 包缓存：
-
-```bash
-conda clean --all
-```
-
-这个命令会执行以下操作：
-- 清除所有未使用的包和缓存目录
-- 移除索引缓存
-- 删除过期的、无效的和未使用的环境
-
-#### 2. 清除特定类型的缓存
-
-如果您只想清除特定类型的缓存，可以使用以下命令：
-
-- 清除包缓存：
-
-```bash
+```python
+# 清除所有缓存
+conda clean -all
+# 清除包缓存
 conda clean --packages
+
 ```
-
-- 清除索引缓存：
-
-```bash
-conda clean --index-cache
-```
-
-- 清除冗余文件：
-
-```bash
-conda clean --tarballs
-```
-
-- 清除未使用的源：
-
-```bash
-conda clean --logs
-```
-
-#### 3. 清楚特定目录的缓存
-
-如果您想手动清除缓存，可以找到包缓存目录并删除其中的文件，通常这些文件位于以下路径：
-
-- 全局包缓存：`D:\anaconda\pkgs\`
-- 用户缓存：`C:\Users\Administrator\.conda\pkgs\`
-
-打开文件资源管理器，导航到这些路径，然后手动删除需要的缓存。
-
-### 注意：
-
-在进行缓存清理之前，确认您了解将被删除的内容，以免误删重要文件。使用 `conda clean --dry-run` 命令可以先查看将要被删除的文件，确保不会误删。 
-
-```bash
-conda clean --all --dry-run
-``` 
 
 使用以上方法后，您就可以成功清除 Anaconda 的缓存了。
 
-### 浏览器可访问但是git clone 屡战屡败？
+### 2.浏览器可访问但是git clone 屡战屡败？
 
 ```
 git config --global http.proxy http://127.0.0.1:1080
