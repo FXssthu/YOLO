@@ -154,7 +154,7 @@ cd yolov5 && pip install -r requirements.txt
 **训练命令，需要进入yolov5源码目录** 
 
 ```python
-python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weights yolov5s.pt --device 0 
+python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weights yolov5s.pt --device 0  #参数需要根据实际修改
 ```
 ### 2.ultralytics（yolov5可跳过）
 **源码下载（任意目录均可，会下载到对应虚拟环境位置）**
