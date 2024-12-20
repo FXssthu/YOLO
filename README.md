@@ -118,9 +118,20 @@ conda create -n yolo_env
 ```pyhton
 conda activate yolo_env
 ```
-**安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，以安装cuda12.4为例**
-```python
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+**安装标注软件，如已有数据集可跳过，以**
+```pyhton
+pip install labelImg
+```
+**启动labelimg，常用快捷键w（创建矩形框）,d（下一张）,a（上一张）,记得设置自动保存**
+```pyhton
+labelimg 
+```
+**安装pytorch,官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，以安装cuda12.4为例**
+[pytorch官网](https://pytorch.org/)
+
+有时候网络不好，命令末尾可以加上--timeout 100，记得关梯子下载，否则可能下载失败
+```python 
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124 --timeout 100
 ```
 ### 1.yolov5（ultralytics可跳过）
 **下载YOLOv5源码**
