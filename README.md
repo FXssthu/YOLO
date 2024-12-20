@@ -142,6 +142,7 @@ python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weig
 ```pyhton
 pip install ultralytics # 下载ultralytics源码
 ```
+**或者**
 ```pyhton
 pip install - U ultralytics # 更新ultralytics源码
 ```
