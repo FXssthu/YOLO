@@ -7,19 +7,24 @@
 ## 1.安装anaconda
 <!--python包和环境管理工具，类似操作系统界的VMware -->
 
+<!--和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 -->
 
-和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 
+<!--记得配置anaconda的环境变量，什么是环境变量=为什么要配置环境变量=环境变量有什么作用 -->
+
+
+
 
 [Anaconda下载官网](https://www.anaconda.com/download)
 
-记得配置anaconda的环境变量，什么是环境变量=为什么要配置环境变量=环境变量有什么作用
 
+<!--
 ```
 D:\anaconda3
 D:\anaconda3\Scripts
 D:\anaconda3\Library\bin
 D:\anaconda3\Library\mingw-w64\bin
 ```
+ -->
 ```python
 #验证是否安装成功
 conda --version
