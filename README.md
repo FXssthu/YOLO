@@ -1,8 +1,12 @@
 # 一、YOLO 
-YOLO入门教程：如何训练自己的数据集
-
+### YOLO阶段:
+1.调用已有模型，实现常见目标检测.
+2.准备特定数据集，训练自己的模型.
+3.修改神经网络，加入Transformer，发论文，YOLO+视觉大模型...
+### 以yolov5和yolov8-v11训练为例训练
 ## 1.安装anaconda
-python包和环境管理工具，类似操作系统界的VMware
+<!--python包和环境管理工具，类似操作系统界的VMware -->
+
 
 和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 
 
@@ -105,7 +109,7 @@ git clone https://github.com/ultralytics/yolov5.git
 **进入YOLOv5源码，下载所需其他pyhton包**
 ```pyhton
 cd yolov5
-pip install -r requirements
+pip install -r requirements.txt
 ```
 至此:yolov5环境搭建完成，下面是数据集构建和数据标注
 
