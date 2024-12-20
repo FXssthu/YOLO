@@ -7,7 +7,7 @@
 3.修改神经网络，加入Transformer，发论文，YOLO+视觉大模型...
 ## 以yolov5和yolov8-v11训练为例训练
 ### 0.准备数据集
-构建以下目录:
+创建一个文件夹并 构建以下目录:
 ```
 └─data
     ├─images
@@ -16,7 +16,7 @@
     └─labels
         ├─train
         └─val
-└─yolov5（后面会下载）
+└─yolov5（后面会下载,若是yolov8-v11，则没有这个）
 ```
 同时data文件夹下有一个my_dataset.yaml 告诉YOLO数据的位置和组成
 
