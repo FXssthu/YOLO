@@ -169,7 +169,7 @@ pip install - U ultralytics # 更新ultralytics源码
 ```python
 yolo task=detect mode=train model=yolov8s.pt data=./data/my_dataset.yaml batch=-1 epochs=100 device=0 name=onlyou
 ```
-**其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install、OPM链接库重复、页面文件过大Error**
+**其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install、OPM链接库重复、页面文件过大Error、高级系统设置**
 
 ```pyhton
 
