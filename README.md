@@ -3,8 +3,23 @@
 1.调用已有模型，实现常见目标检测.
 2.准备特定数据集，训练自己的模型.
 3.修改神经网络，加入Transformer，发论文，YOLO+视觉大模型...
-### 以yolov5和yolov8-v11训练为例训练
-## 1.安装anaconda
+## 以yolov5和yolov8-v11训练为例训练
+### 0.准备数据集
+构建以下目录:
+```
+└─data
+    ├─images
+    │  ├─train
+    │  └─val
+    └─labels
+        ├─train
+        └─val
+└─yolov5（后面会下载）
+```
+同时data文件夹下有一个my_dataset.yaml 告诉YOLO数据的位置和组成
+
+
+### 1.安装anaconda
 <!--python包和环境管理工具，类似操作系统界的VMware -->
 
 <!--和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 -->
@@ -92,16 +107,16 @@ pip3和pip的区别
 
 conda相关命令
  -->
-## 2.使用anaconda
-**创建名称为:yolov5_env的环境,指定pyhton版本为3.x,不写参数默认为conda info中的版本**
+### 2.使用anaconda
+**创建名称为:yolov5_env的环境**
 ```python
-conda create -n yolov5_env python=3.x
+conda create -n yolov5_env
 ```
 **激活/进入创建的环境**
 ```pyhton
-activate yolov5_env
+conda activate yolov5_env
 ```
-**安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，例如安装cuda12.4**
+**安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，以安装cuda12.4为例**
 ```python
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
@@ -113,20 +128,11 @@ git clone https://github.com/ultralytics/yolov5.git
 ```pyhton
 cd yolov5
 pip install -r requirements.txt
-```
-至此:yolov5环境搭建完成，下面是数据集构建和数据标注
 
-构建以下目录:
 ```
-└─data
-    ├─images
-    │  ├─train
-    │  └─val
-    └─labels
-        ├─train
-        └─val
-└─yolov5
-```
+
+
+
 其中data文件夹下应有:data.yaml文件，用于告诉YOLO数据在什么地方，数据组成是什么样子的
 
 **yolov5训练命令** 
