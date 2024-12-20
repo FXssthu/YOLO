@@ -6,6 +6,7 @@
 
 3.修改神经网络，加入Transformer，发论文，YOLO+视觉大模型...
 
+
 ### 0.准备数据集
 创建一个文件夹并 构建以下目录:
 ```
@@ -121,7 +122,7 @@ conda activate yolo_env
 ```python
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
-#### 1.yolov5（ultralytics可跳过）
+### 1.yolov5（ultralytics可跳过）
 **下载YOLOv5源码**
 ```python
 git clone https://github.com/ultralytics/yolov5.git
@@ -137,7 +138,7 @@ cd yolov5 && pip install -r requirements.txt
 ```python
 python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weights yolov5s.pt --device 0 
 ```
-#### 2.ultralytics（yolov5可跳过）
+### 2.ultralytics（yolov5可跳过）
 **源码下载（任意目录均可，会下载到对应虚拟环境位置）**
 ```pyhton
 pip install ultralytics # 下载ultralytics源码
