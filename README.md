@@ -2,10 +2,10 @@
 ### YOLO阶段:
 1.调用已有模型，实现常见目标检测.
 
-2.准备特定数据集，训练自己的模型.
+2.准备特定数据集，训练自己的模型(本文示例yolov5和ultralytics系列的训练).
 
 3.修改神经网络，加入Transformer，发论文，YOLO+视觉大模型...
-## 以yolov5和yolov8-v11训练为例训练
+
 ### 0.准备数据集
 创建一个文件夹并 构建以下目录:
 ```
@@ -16,12 +16,11 @@
     └─labels
         ├─train
         └─val
-└─yolov5（后面会下载,若是yolov8-v11，则没有这个）
+└─yolov5（后面会下载,若是ultralytics，则没有这个）
 ```
 同时data文件夹下有一个my_dataset.yaml 告诉YOLO数据的位置和组成
 
-
-### 1.安装anaconda
+### 1.安装anaconda（记得添加环境变量）
 <!--python包和环境管理工具，类似操作系统界的VMware -->
 
 <!--和conda又是什么关系:包管理工具:conda、pip、apt分别是什么 -->
@@ -109,40 +108,49 @@ pip3和pip的区别
 
 conda相关命令
  -->
-### 2.使用anaconda
+### 2 使用anaconda
 **创建名称为:yolov5_env的环境**
 ```python
-conda create -n yolov5_env
+conda create -n yolo_env
 ```
 **激活/进入创建的环境**
 ```pyhton
-conda activate yolov5_env
+conda activate yolo_env
 ```
 **安装pytorch 官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，以安装cuda12.4为例**
 ```python
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
+#### 1.yolov5（ultralytics可跳过）
 **下载YOLOv5源码**
 ```python
 git clone https://github.com/ultralytics/yolov5.git
 ```
 **进入YOLOv5源码，下载所需其他pyhton包**
 ```pyhton
-cd yolov5
-pip install -r requirements.txt
+cd yolov5 && pip install -r requirements.txt
 
 ```
 
+**训练命令，需要进入yolov5源码目录** 
 
-
-其中data文件夹下应有:data.yaml文件，用于告诉YOLO数据在什么地方，数据组成是什么样子的
-
-**yolov5训练命令** 
 ```python
-python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weights yolov5s.pt --device 0
+python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weights yolov5s.pt --device 0 
 ```
+#### 2.ultralytics（yolov5可跳过）
+**源码下载（任意目录均可，会下载到对应虚拟环境位置）**
+```pyhton
+pip install ultralytics # 下载ultralytics源码
+```
+```pyhton
+pip install - U ultralytics # 更新ultralytics源码
+```
+**训练命令，任意目录运行均可，但是生成的best.pt会在该目录下**
+```python
+yolo task=detect mode=train model=yolov8s.pt data=./data/my_dataset.yaml batch=-1 epochs=100 device=0 name=onlyou
+```
+**其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install、OPM链接库重复、页面文件过大Error**
 
-**其他问题:pip安装、pip缓存清除、pip存在但无法使用pip install**
 ```pyhton
 
 ```
