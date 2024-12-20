@@ -23,8 +23,8 @@
 ```
 yaml文件格式如下:
 ```yaml
-train: E:/YOLO/data/images/train  # 训练图像路径
-val: E:/YOLO/data/images/val      # 验证图像路径
+train: E:/YOLO/data/images/train  # 训练图像路径，相对路径和绝对路径均可
+val: E:/YOLO/data/images/val      # 验证图像路径，推荐绝对路径
 nc: 2                             # 类别数量
 names: ['dog', 'cat']             # 类别名称,记得顺序和标注时创建的类别顺序相同
 ```
