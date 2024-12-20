@@ -11,9 +11,6 @@
 
 <!--记得配置anaconda的环境变量，什么是环境变量=为什么要配置环境变量=环境变量有什么作用 -->
 
-
-
-
 [Anaconda下载官网](https://www.anaconda.com/download)
 
 
@@ -24,7 +21,8 @@ D:\anaconda3\Scripts
 D:\anaconda3\Library\bin
 D:\anaconda3\Library\mingw-w64\bin
 ```
- -->
+
+ 
 ```python
 #验证是否安装成功
 conda --version
@@ -93,7 +91,7 @@ pip缓存cache的问题，相关关键词:更新和依赖
 pip3和pip的区别
 
 conda相关命令
-
+ -->
 ## 2.使用anaconda
 **创建名称为:yolov5_env的环境,指定pyhton版本为3.x,不写参数默认为conda info中的版本**
 ```python
