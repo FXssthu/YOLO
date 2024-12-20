@@ -11,11 +11,11 @@
 创建一个文件夹并 构建以下目录:
 ```python
 └─data
-    ├─images     
+    ├─images     #标注数据集之前应收集/下载好图片们
     │  ├─train   #训练数据集，不需要标注，文件应为png/jpg/pdf  
     │  └─val     #验证数据集，不需要标注，文件应为png/jpg/pdf
-    └─labels
-        ├─train  #监督学习，训练标签，应为txt
+    └─labels     #后续创建好环境，安装labelimg后输出xml文件，再使用py脚本修改格式
+        ├─train  #监督学习，训练标签，应为txt 
         └─val    #验证标签，应为txt
 └─yolov5（后面会下载,若是ultralytics，则没有这个）
 ```
