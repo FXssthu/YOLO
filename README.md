@@ -9,14 +9,14 @@
 
 ### 0.准备数据集
 创建一个文件夹并 构建以下目录:
-```
+```python
 └─data
-    ├─images
-    │  ├─train
-    │  └─val
+    ├─images     
+    │  ├─train   #训练数据集，不需要标注，文件应为png/jpg/pdf  
+    │  └─val     #验证数据集，不需要标注，文件应为png/jpg/pdf
     └─labels
-        ├─train
-        └─val
+        ├─train  #监督学习，训练标签，应为txt
+        └─val    #验证标签，应为txt
 └─yolov5（后面会下载,若是ultralytics，则没有这个）
 ```
 同时data文件夹下有一个my_dataset.yaml 告诉YOLO数据的位置和组成
