@@ -15,12 +15,19 @@
     │  ├─train   #训练数据集，不需要标注，文件应为png/jpg/pdf  
     │  └─val     #验证数据集，不需要标注，文件应为png/jpg/pdf
     └─labels     #后续创建好环境，安装labelimg后输出xml文件，再使用py脚本修改格式
-        ├─train  #监督学习，训练标签，应为txt 
-        └─val    #验证标签，应为txt
+    │    ├─train  #监督学习，训练标签，应为txt 
+    │    └─val    #验证标签，应为txt
+    │
+    └─ your_dataset.yaml   #告诉YOLO数据的位置和组成
 └─yolov5（后面会下载,若是ultralytics，则没有这个）
 ```
-同时data文件夹下有一个my_dataset.yaml 告诉YOLO数据的位置和组成
-
+yaml文件格式如下:
+```yaml
+train: E:/YOLO/data/images/train  # 训练图像路径
+val: E:/YOLO/data/images/val      # 验证图像路径
+nc: 2                             # 类别数量
+names: ['dog', 'cat']             # 类别名称,记得顺序和标注时创建的类别顺序相同
+```
 ### 1.安装anaconda（记得添加环境变量）
 <!--python包和环境管理工具，类似操作系统界的VMware -->
 
