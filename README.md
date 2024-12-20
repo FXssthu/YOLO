@@ -163,7 +163,7 @@ pip install ultralytics # 下载ultralytics源码
 ```
 **或者**
 ```pyhton
-pip install - U ultralytics # 更新ultralytics源码
+pip install -U ultralytics # 更新ultralytics源码
 ```
 **训练命令，任意目录运行均可，但是生成的best.pt会在该目录下**
 ```python
