@@ -165,7 +165,7 @@ pip install ultralytics # 下载ultralytics源码
 ```pyhton
 pip install -U ultralytics # 更新ultralytics源码
 ```
-**训练命令，任意目录运行均可，但是生成的best.pt会在该目录下**
+**训练命令，任意目录运行均可，但是生成的runs文件夹（包含模型权重文件）会在该目录下**
 ```python
 yolo task=detect mode=train model=yolov8s.pt data=./data/my_dataset.yaml batch=-1 epochs=100 device=0 name=onlyou
 ```
