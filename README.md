@@ -174,7 +174,8 @@ yolo task=detect mode=train model=yolov8s.pt data=./data/my_dataset.yaml batch=-
 ```pyhton
 
 ```
-# 二、Extend:深度学习环境配置
+# 二、Extend:深度学习入门
+## （一）环境搭建
 相关名词和关系解释
 
 GPU cuda pytorch torch anaconda 
