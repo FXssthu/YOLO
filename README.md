@@ -127,11 +127,11 @@ conda activate yolo_env
 ```
 **安装标注软件，如已有数据集可跳过，以**
 ```pyhton
-pip install labelImg
+pip install labelme
 ```
-**启动labelimg，常用快捷键w（创建矩形框）,d（下一张）,a（上一张）,记得设置自动保存**
+**启动labelme，常用快捷键w（创建矩形框）,d（下一张）,a（上一张）,记得设置自动保存**
 ```pyhton
-labelimg 
+labelme
 ```
 **安装pytorch,官网查询版本+命令，只有NVIDIA显卡支持pytorch，Intel、AMD等不支持，以安装cuda12.4为例**
 [pytorch官网](https://pytorch.org/)
