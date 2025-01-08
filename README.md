@@ -186,7 +186,7 @@ GPU驱动 cuda编程 cuda Toolkit cuda核心 nvcc
 
 相互关系:例：只有NVIDIA的GPU才支持pytorch
 
-**深度学习的HelloWorld**
+**深度学习的HelloWorld--手写数字识别 minst**
 ```python
 # 导入必要的库
 import torch
