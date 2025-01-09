@@ -159,11 +159,11 @@ python train.py --img 640 --batch -1 --epochs 50 --data ../data/data.yaml --weig
 ### 2.ultralytics（yolov5可跳过）
 **源码下载（任意目录均可，会下载到对应虚拟环境位置）**
 ```pyhton
-pip install ultralytics # 下载ultralytics源码
+pip install ultralytics 
 ```
 **或者**
 ```pyhton
-pip install -U ultralytics # 更新ultralytics源码
+pip install -U ultralytics 
 ```
 **训练命令，任意目录运行均可，但是生成的runs文件夹（包含模型权重文件）会在该目录下**
 ```python
